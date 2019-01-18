@@ -3,11 +3,12 @@ name = "googletest"
 
 version = "1.8.1"
 
-build_requires = [        
+build_requires = [
+    'cmake-3.10+',
     'gcc'
 ]
 
-requires = [        
+requires = [
 ]
 
 variants = [
@@ -16,6 +17,6 @@ variants = [
 
 uuid = "googletest"
 
-def commands():    
+def commands():
     env.PATH.append('{root}/bin')
 

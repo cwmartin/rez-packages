@@ -3,16 +3,17 @@ name = "AL_USDMaya"
 
 version = "0.29.4"
 
-build_requires = [    
+build_requires = [
     'ptex-2.0.40+',
     'glew-2.0.0+',
     'boost-1.55',
-    'usd-19',
-    'googletest-1.8'
+    'usd-18',
+    'googletest-1.8',
+    'maya'
 ]
 
-requires = [    
-    'usd-19'    
+requires = [
+    'usd-18'
 ]
 
 variants = [
@@ -22,11 +23,11 @@ variants = [
 uuid = "AL_USDMaya"
 
 def commands():
-    # env.PYTHONPATH.append('{root}/lib/python')
+    env.PYTHONPATH.append('{root}/lib/python')
     # env.PATH.append('{root}/bin')
 
     if 'maya' in request:
-        env.MAYA_PLUG_IN_PATH.append('{root}/third_party/maya/plugin')
+        env.MAYA_PLUG_IN_PATH.append('{root}/plugin')
         env.MAYA_SCRIPT_PATH.append('{root}/third_party/maya/share/usd/plugins/usdMaya/resources')
 
     # if 'katana' in request:

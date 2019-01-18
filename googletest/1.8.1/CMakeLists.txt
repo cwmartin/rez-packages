@@ -8,7 +8,7 @@ set(googletest_version $ENV{REZ_BUILD_PROJECT_VERSION})
 
 rez_set_archive(
     url_googletest googletest/googletest-release-${googletest_version}.tar.gz
-    https://github.com/google/googletest/archive/release-${googletest_version}.tar.gz    
+    https://github.com/google/googletest/archive/release-${googletest_version}.tar.gz
 )
 
 set(make_args -j$ENV{REZ_BUILD_THREAD_COUNT} VERBOSE=1)
@@ -20,12 +20,15 @@ else()
 endif()
 
 ExternalProject_add(
-    usd
+    googletest
     URL ${url_googletest}
-    PREFIX usd
-    CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}  
-    		   -DCMAKE_POSITION_INDEPENDENT_CODE=ON             
-               
+    PREFIX googletest
+    CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
+    		   -DCMAKE_POSITION_INDEPENDENT_CODE=ON
+    		   -DTHREADS_PREFER_PTHREAD_FLAG=ON
+               -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
+
+
 )
 
 install(CODE "message(STATUS Installing...)")
