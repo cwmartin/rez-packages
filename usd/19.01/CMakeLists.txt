@@ -30,7 +30,7 @@ ExternalProject_add(
                -DPXR_ENABLE_PTEX_SUPPORT=TRUE
                -DPXR_BUILD_USD_IMAGING=TRUE
                -DPXR_BUILD_USDVIEW=TRUE
-               
+
                -DTBB_ROOT_DIR=$ENV{REZ_TBB_ROOT}
                -DTBB_tbb_LIBRARY=$ENV{REZ_TBB_ROOT}/lib/libtbb.so
 
@@ -42,33 +42,34 @@ ExternalProject_add(
 
                # -DPXR_BUILD_ALEMBIC_PLUGIN=TRUE
                # -DALEMBIC_DIR=$ENV{REZ_ALEMBIC_ROOT}
-               # -DPXR_ENABLE_HDF5_SUPPORT=FALSE              
-               
+               # -DPXR_ENABLE_HDF5_SUPPORT=FALSE
+
                -DOIIO_LOCATION=$ENV{REZ_OPENIMAGEIO_ROOT}
                -DPTEX_LOCATION=$ENV{PTEX_INCLUDE_DIR}
-               
+
                -OPENSUBDIV_ROOT_DIR=$ENV{REZ_OPENSUBDIV_ROOT}
-               -DBOOST_ROOT=$ENV{REZ_BOOST_ROOT}        
+               -DBOOST_ROOT=$ENV{REZ_BOOST_ROOT}
 
                -DGLEW_LOCATION=$ENV{REZ_GLEW_ROOT}
-               
+
                # -DBoost_USE_STATIC_LIBS=ON
 
                -DPYSIDE_BIN_DIR=$ENV{REZ_PYSIDE_ROOT}/bin
 
-               
+
 
                -DPXR_BUILD_MAYA_PLUGIN=TRUE
-               -DMAYA_LOCATION=/usr/autodesk/maya2018
+               -DMAYA_LOCATION=$ENV{REZ_MAYA_ROOT}
                -DMAYA_tbb_LIBRARY=$ENV{REZ_TBB_ROOT}/lib/libtbb.so
-               -DPXR_MAYA_TBB_BUG_WORKAROUND=ON 
+
+               # -DPXR_MAYA_TBB_BUG_WORKAROUND=ON
                # -DPXR_BUILD_KATANA_PLUGIN=TRUE
                # -DKATANA_API_LOCATION=/opt/thefoundry/katana/katana2.5v4
-               
+
                -DPXR_ENABLE_NAMESPACES=ON
 
-               -DCMAKE_SKIP_BUILD_RPATH=FALSE 
-               -DCMAKE_BUILD_WITH_INSTALL_RPATH=FALSE 
+               -DCMAKE_SKIP_BUILD_RPATH=FALSE
+               -DCMAKE_BUILD_WITH_INSTALL_RPATH=FALSE
                -DCMAKE_INSTALL_RPATH=$ENV{REZ_BOOST_ROOT}/lib
 )
 

@@ -12,6 +12,7 @@ description = \
     """
 
 build_requires = [
+    'cmake-3.2+',
     "boost-1.55",
     "gcc-4.8.2+",
     "ilmbase-2.2",
