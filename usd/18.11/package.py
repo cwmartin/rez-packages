@@ -1,7 +1,7 @@
 
 name = "usd"
 
-version = "19.01"
+version = "18.11"
 
 build_requires = [
     'alembic-1.5.2+',
@@ -20,7 +20,6 @@ build_requires = [
     'Jinja2',
     'argparse'
 ]
-
 
 requires = [
     'python-2.7',
