@@ -4,7 +4,8 @@ name = "glew"
 version = "2.1.0"
 
 build_requires = [
-    'gcc'
+    'gcc',
+    'cmake-3.0+'
 ]
 
 requires = [

@@ -20,7 +20,8 @@ description = \
 # ]
 
 build_requires = [
-    'gcc-4.8.2+'
+    'gcc-4.8.2+',
+    'cmake-3.1+',
 ]
 
 variants = [
