@@ -14,17 +14,20 @@ build_requires = [
     'openimageio-1.5.11+',
     'ptex-2.0.30+',
     'glew-2.0.0+',
-    # 'pyside-1.2',
-    'pyside2-5.6',
+    'pyside-1.2',
+    # 'pyside2-5.6',
     'PyOpenGL-3.1.0',
-    'Jinja2',
-    'argparse'
+    # 'Jinja2',
+    'argparse',
+    'maya'
 ]
+
 
 requires = [
     'python-2.7',
     'boost-1.55',
-    'pyside2-5.6',
+    # 'pyside-1.2',
+    # 'pyside2-5.6',
     'PyOpenGL',
 ]
 
@@ -38,9 +41,10 @@ def commands():
     env.PYTHONPATH.append('{root}/lib/python')
     env.PATH.append('{root}/bin')
 
-    # if 'maya' in request:
-    #     env.MAYA_PLUG_IN_PATH.append('{root}/third_party/maya/plugin')
-    #     env.MAYA_SCRIPT_PATH.append('{root}/third_party/maya/share/usd/plugins/usdMaya/resources')
+    if 'maya' in request:
+        env.MAYA_PLUG_IN_PATH.append('{root}/third_party/maya/plugin')
+        env.MAYA_SCRIPT_PATH.append('{root}/third_party/maya/lib/usd/usdMaya/resources')
+        env.XBMLANGPATH.append('{root}/third_party/maya/ lib/usd/usdMaya/resources/')
 
     # if 'katana' in request:
     #     env.KATANA_RESOURCES.append('{root}/third_party/katana/plugin')
