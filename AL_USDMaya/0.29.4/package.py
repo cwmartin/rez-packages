@@ -23,7 +23,7 @@ variants = [
 uuid = "AL_USDMaya"
 
 def commands():
-    env.PYTHONPATH.append('{root}/lib/python')
+    env.PYTHONPATH.prepend('{root}/lib/python')
     # env.PATH.append('{root}/bin')
 
     if 'maya' in request:
