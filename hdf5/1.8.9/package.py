@@ -39,7 +39,7 @@ tools = [
     "h5unjam"
 ]
 
-uuid = "repository.hdf5"
+uuid = "hdf5"
 
 def commands():
     env.PATH.append("{root}/bin")
