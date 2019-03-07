@@ -24,6 +24,7 @@ ExternalProject_add(
     PREFIX opencolorio
     URL ${url_opencolorio}
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
+               -DUSE_EXTERNAL_YAML=ON
                -DCMAKE_SKIP_BUILD_RPATH=OFF
                -DCMAKE_BUILD_WITH_INSTALL_RPATH=OFF
                -DCMAKE_INSTALL_RPATH=${CMAKE_INSTALL_PREFIX}/lib

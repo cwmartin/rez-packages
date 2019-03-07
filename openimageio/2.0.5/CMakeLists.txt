@@ -32,16 +32,25 @@ ExternalProject_add(
                -DUSE_PYTHON=ON
                -DUSE_fPIC=ON
                -DUSE_OCIO=ON
-               -DOCIO_PATH=$ENV{REZ_OPENCOLORIO_ROOT}
+
+               -DYAML_CPP_ROOT=$ENV{REZ_YAML_CPP_ROOT}/lib
+
+               # -DOCIO_PATH=$ENV{REZ_OPENCOLORIO_ROOT}
+               -DOCIO_INCLUDE_PATH=$ENV{REZ_OPENCOLORIO_ROOT}/include
+               -DOCIO_LIBRARY_PATH=$ENV{REZ_OPENCOLORIO_ROOT}/lib/static
                -DOIIO_BUILD_TESTS=OFF
+
                -DBOOST_ROOT=$ENV{REZ_BOOST_ROOT}
                -DILMBASE_INCLUDE_PATH=$ENV{REZ_ILMBASE_ROOT}/include
                -DOPENEXR_INCLUDE_PATH=$ENV{REZ_OPENEXR_ROOT}/include
                -DILMBASE_HOME=$ENV{REZ_ILMBASE_ROOT}
                -DOPENEXR_HOME=$ENV{REZ_OPENEXR_ROOT}
-               -DCMAKE_SKIP_BUILD_RPATH=FALSE
-               -DCMAKE_BUILD_WITH_INSTALL_RPATH=FALSE
-               -DCMAKE_INSTALL_RPATH=$ENV{REZ_BOOST_ROOT}/lib:${CMAKE_INSTALL_PREFIX}/lib
+
+               # -DCMAKE_SKIP_BUILD_RPATH=FALSE
+               # -DCMAKE_BUILD_WITH_INSTALL_RPATH=FALSE
+               # -DCMAKE_INSTALL_RPATH_USE_LINK_PATH=TRUE
+
+               # -DCMAKE_INSTALL_RPATH=$ENV{REZ_BOOST_ROOT}/lib:${CMAKE_INSTALL_PREFIX}/lib
 
 
 )

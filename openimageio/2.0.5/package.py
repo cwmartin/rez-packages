@@ -18,6 +18,7 @@ build_requires = [
     "ilmbase-2.2",
     "openexr-2.2",
     "opencolorio-1",
+    "yaml_cpp-0.3",
     "python-2.7",
 ]
 
