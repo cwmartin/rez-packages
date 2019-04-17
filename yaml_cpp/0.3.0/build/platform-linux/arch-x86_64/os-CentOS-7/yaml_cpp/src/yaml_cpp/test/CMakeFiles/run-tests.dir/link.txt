@@ -1,0 +1,1 @@
+/usr/bin/g++  -Wall  -Wextra -pedantic -Wno-long-long  -O2  -rdynamic CMakeFiles/run-tests.dir/emittertests.cpp.o CMakeFiles/run-tests.dir/main.cpp.o CMakeFiles/run-tests.dir/spectests.cpp.o CMakeFiles/run-tests.dir/tests.cpp.o CMakeFiles/run-tests.dir/old-api/parsertests.cpp.o CMakeFiles/run-tests.dir/old-api/spectests.cpp.o  -o run-tests ../libyaml-cpp.a 

@@ -1,0 +1,98 @@
+{
+    "default_patch_lock": "no_lock",
+    "rez_version": "2.23.1",
+    "package_requests": [
+        "platform-linux",
+        "arch-x86_64",
+        "os-CentOS-7",
+        "gcc",
+        "cmake-3.0+"
+    ],
+    "serialize_version": "4.3",
+    "resolved_packages": [
+        {
+            "variables": {
+                "index": null,
+                "version": "linux",
+                "repository_type": "filesystem",
+                "location": "/home/cmartin/packages",
+                "name": "platform"
+            },
+            "key": "filesystem.variant"
+        },
+        {
+            "variables": {
+                "index": null,
+                "version": "x86_64",
+                "repository_type": "filesystem",
+                "location": "/home/cmartin/packages",
+                "name": "arch"
+            },
+            "key": "filesystem.variant"
+        },
+        {
+            "variables": {
+                "index": null,
+                "version": "CentOS-7.3.1611",
+                "repository_type": "filesystem",
+                "location": "/home/cmartin/packages",
+                "name": "os"
+            },
+            "key": "filesystem.variant"
+        },
+        {
+            "variables": {
+                "index": 0,
+                "version": "4.8.5",
+                "repository_type": "filesystem",
+                "location": "/home/cmartin/packages",
+                "name": "gcc"
+            },
+            "key": "filesystem.variant"
+        },
+        {
+            "variables": {
+                "index": 0,
+                "version": "3.10.0",
+                "repository_type": "filesystem",
+                "location": "/home/cmartin/packages",
+                "name": "cmake"
+            },
+            "key": "filesystem.variant"
+        }
+    ],
+    "num_loaded_packages": 5,
+    "status": "solved",
+    "implicit_packages": [
+        "~platform==linux",
+        "~arch==x86_64",
+        "~os==CentOS-7.3.1611"
+    ],
+    "host": "mtl-lnx-086.atomicfiction.net",
+    "user": "cmartin",
+    "package_filter": [],
+    "arch": "x86_64",
+    "solve_time": 0.003323078155517578,
+    "building": true,
+    "requested_timestamp": null,
+    "parent_suite_path": null,
+    "suite_context_name": null,
+    "package_orderers": null,
+    "graph": "{'nodes': [((('fillcolor', '#AAFFAA'), ('fontsize', 10), ('style', 'filled')), [('_9', 'gcc-4.8.5[0]'), ('_8', 'os-CentOS-7.3.1611[]'), ('_7', 'arch-x86_64[]'), ('_6', 'platform-linux[]'), ('_10', 'cmake-3.10.0[0]')]), ((('fillcolor', '#F6F6F6'), ('fontsize', 10), ('style', 'filled,dashed')), [('_14', 'gcc-4.8.2+'), ('_13', 'os-CentOS-7'), ('_12', 'arch-x86_64'), ('_11', 'platform-linux')]), ((('fillcolor', '#FFFFAA'), ('fontsize', 10), ('style', 'filled,dashed')), [('_5', 'cmake-3.0+'), ('_4', 'gcc'), ('_3', 'os==CentOS-7.3.1611'), ('_2', 'arch==x86_64'), ('_1', 'platform==linux')])], 'edges': [((('arrowsize', '0.5'),), [('_9', '_12'), ('_9', '_11'), ('_9', '_13'), ('_8', '_11'), ('_8', '_12'), ('_5', '_10'), ('_4', '_9'), ('_3', '_8'), ('_2', '_7'), ('_1', '_6'), ('_14', '_9'), ('_13', '_8'), ('_12', '_7'), ('_11', '_6'), ('_10', '_12'), ('_10', '_11'), ('_10', '_13'), ('_10', '_14')])]}",
+    "failure_description": null,
+    "created": 1550526119,
+    "package_paths": [
+        "/home/cmartin/packages",
+        "/Volumes/af/tools/thirdparty/packages",
+        "/home/cmartin/.rez/packages/int",
+        "/home/cmartin/.rez/packages/ext"
+    ],
+    "platform": "linux",
+    "rez_path": "/home/cmartin/opt/rez/lib/python2.7/site-packages/rez-2.23.1-py2.7.egg/rez",
+    "patch_locks": {},
+    "from_cache": false,
+    "timestamp": 1550526119,
+    "caching": true,
+    "load_time": 0.0,
+    "os": "CentOS-7.3.1611"
+}

@@ -1,0 +1,11 @@
+prefix=/home/cmartin/packages/yaml_cpp/0.5.3/platform-linux/arch-x86_64/os-CentOS-7
+exec_prefix=/home/cmartin/packages/yaml_cpp/0.5.3/platform-linux/arch-x86_64/os-CentOS-7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: Yaml-cpp
+Description: A YAML parser and emitter for C++
+Version: 0.5.3
+Requires:
+Libs: -L${libdir} -lyaml-cpp
+Cflags: -I${includedir}

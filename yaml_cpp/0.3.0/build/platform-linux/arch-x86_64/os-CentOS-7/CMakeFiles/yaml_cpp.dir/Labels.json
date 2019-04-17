@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/cmartin/dev/third_party/rez-packages/yaml_cpp/0.3.0/build/platform-linux/arch-x86_64/os-CentOS-7/CMakeFiles/yaml_cpp"
+		},
+		{
+			"file" : "/home/cmartin/dev/third_party/rez-packages/yaml_cpp/0.3.0/build/platform-linux/arch-x86_64/os-CentOS-7/CMakeFiles/yaml_cpp.rule"
+		},
+		{
+			"file" : "/home/cmartin/dev/third_party/rez-packages/yaml_cpp/0.3.0/build/platform-linux/arch-x86_64/os-CentOS-7/CMakeFiles/yaml_cpp-complete.rule"
+		},
+		{
+			"file" : "/home/cmartin/dev/third_party/rez-packages/yaml_cpp/0.3.0/build/platform-linux/arch-x86_64/os-CentOS-7/yaml_cpp/src/yaml_cpp-stamp/yaml_cpp-install.rule"
+		},
+		{
+			"file" : "/home/cmartin/dev/third_party/rez-packages/yaml_cpp/0.3.0/build/platform-linux/arch-x86_64/os-CentOS-7/yaml_cpp/src/yaml_cpp-stamp/yaml_cpp-mkdir.rule"
+		},
+		{
+			"file" : "/home/cmartin/dev/third_party/rez-packages/yaml_cpp/0.3.0/build/platform-linux/arch-x86_64/os-CentOS-7/yaml_cpp/src/yaml_cpp-stamp/yaml_cpp-download.rule"
+		},
+		{
+			"file" : "/home/cmartin/dev/third_party/rez-packages/yaml_cpp/0.3.0/build/platform-linux/arch-x86_64/os-CentOS-7/yaml_cpp/src/yaml_cpp-stamp/yaml_cpp-update.rule"
+		},
+		{
+			"file" : "/home/cmartin/dev/third_party/rez-packages/yaml_cpp/0.3.0/build/platform-linux/arch-x86_64/os-CentOS-7/yaml_cpp/src/yaml_cpp-stamp/yaml_cpp-patch.rule"
+		},
+		{
+			"file" : "/home/cmartin/dev/third_party/rez-packages/yaml_cpp/0.3.0/build/platform-linux/arch-x86_64/os-CentOS-7/yaml_cpp/src/yaml_cpp-stamp/yaml_cpp-configure.rule"
+		},
+		{
+			"file" : "/home/cmartin/dev/third_party/rez-packages/yaml_cpp/0.3.0/build/platform-linux/arch-x86_64/os-CentOS-7/yaml_cpp/src/yaml_cpp-stamp/yaml_cpp-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"yaml_cpp"
+		],
+		"name" : "yaml_cpp"
+	}
+}

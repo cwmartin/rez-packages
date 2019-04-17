@@ -1,0 +1,1 @@
+cmd='/home/cmartin/packages/cmake/3.10.0/platform-linux/arch-x86_64/os-CentOS-7/bin/cmake;-DCMAKE_INSTALL_PREFIX=/home/cmartin/packages/yaml_cpp/0.5.3/platform-linux/arch-x86_64/os-CentOS-7'
