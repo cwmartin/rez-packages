@@ -28,9 +28,12 @@ ExternalProject_add(
                -DBOOST_ROOT=$ENV{REZ_BOOST_ROOT}
                -DMAYA_LOCATION='/usr/autodesk/maya2018'
                -DUSD_CONFIG_FILE='$ENV{REZ_USD_ROOT}/pxrConfig.cmake'          
-               -DGTEST_ROOT=$ENV{REZ_GOOGLETEST_ROOT}
+               # -DGTEST_ROOT=$ENV{REZ_GOOGLETEST_ROOT}
+               -DSKIP_USDMAYA_TESTS=ON
                # -DGTEST_ROOT='/path/to/googletest'\
                # -DCMAKE_PREFIX_PATH='/path/to/maya/lib/cmake'
+               -DCMAKE_INSTALL_RPATH=$ENV{REZ_BOOST_ROOT}/lib:$ENV{REZ_GLEW_ROOT}/lib64:$ENV{REZ_USD_ROOT}/lib:$ENV{REZ_OPENSUBDIV_ROOT}/lib:$ENV{REZ_PTEX_ROOT}/lib64:${CMAKE_INSTALL_PREFIX}/lib
+
                
 )
 

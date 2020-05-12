@@ -7,12 +7,12 @@ build_requires = [
     'ptex-2.0.40+',
     'glew-2.0.0+',
     'boost-1.55',
-    'usd-19',
+    'usd-18',
     'googletest-1.8'
 ]
 
 requires = [    
-    'usd-19'    
+    'usd-18'    
 ]
 
 variants = [
@@ -22,12 +22,10 @@ variants = [
 uuid = "AL_USDMaya"
 
 def commands():
-    # env.PYTHONPATH.append('{root}/lib/python')
+    env.PYTHONPATH.append('{root}/lib/python')
     # env.PATH.append('{root}/bin')
-
-    if 'maya' in request:
-        env.MAYA_PLUG_IN_PATH.append('{root}/third_party/maya/plugin')
-        env.MAYA_SCRIPT_PATH.append('{root}/third_party/maya/share/usd/plugins/usdMaya/resources')
+    
+    env.MAYA_PLUG_IN_PATH.append('{root}/plugin')        
 
     # if 'katana' in request:
     #     env.KATANA_RESOURCES.append('{root}/third_party/katana/plugin')

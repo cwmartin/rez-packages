@@ -39,8 +39,8 @@ def commands():
     env.PATH.append('{root}/bin')
 
     # if 'maya' in request:
-    #     env.MAYA_PLUG_IN_PATH.append('{root}/third_party/maya/plugin')
-    #     env.MAYA_SCRIPT_PATH.append('{root}/third_party/maya/share/usd/plugins/usdMaya/resources')
+    env.MAYA_PLUG_IN_PATH.append('{root}/third_party/maya/plugin')
+    env.MAYA_SCRIPT_PATH.append('{root}/third_party/maya/share/usd/plugins/usdMaya/resources')
 
     # if 'katana' in request:
     #     env.KATANA_RESOURCES.append('{root}/third_party/katana/plugin')
