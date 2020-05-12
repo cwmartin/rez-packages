@@ -34,7 +34,7 @@ def commands():
         env.LD_LIBRARY_PATH.prepend("/opt/rh/devtoolset-6/root/usr/lib")
         env.LD_LIBRARY_PATH.prepend("/opt/rh/devtoolset-6/root/usr/lib64")
 
-        env.PATH.prepend("/opt/rh/devtoolset-6/root/usr/bin")
-
         env.CC = "/opt/rh/devtoolset-6/root/usr/bin/gcc"
         env.CXX = "/opt/rh/devtoolset-6/root/usr/bin/g++"
+
+    env.PATH.prepend("/opt/rh/devtoolset-6/root/usr/bin")
