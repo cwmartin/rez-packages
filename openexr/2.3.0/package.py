@@ -18,8 +18,7 @@ requires = [
 build_requires = [
     "cmake-3.12+",
     "gcc-6.3.1",
-    "boost-1.66",
-    "python-2.7.9+"
+    "ilmbase-2.3"
 ]
 
 variants = [

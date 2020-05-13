@@ -31,21 +31,5 @@ ExternalProject_add(
     BUILD_COMMAND make ${make_args}
 )
 
-#ExternalProject_add(
-#    openexr
-#    GIT_REPOSITORY https://github.com/AcademySoftwareFoundation/openexr.git
-#    GIT_TAG v2.3.0
-#    PREFIX openexr
-#    CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
-#               -DBOOST_ROOT=$ENV{REZ_BOOST_ROOT}
-#               -DOPENEXR_BUILD_ILMBASE=ON
-#               -DOPENEXR_BUILD_OPENEXR=ON
-#               -DOPENEXR_BUILD_PYTHON_LIBS=ON
-#               -DOPENEXR_BUILD_STATIC=ON
-#               -OPENEXR_BUILD_SHARED=OFF
-#               -DPYTHON_LIBRARY=$ENV{REZ_PYTHON_ROOT}/lib/libpython2.7.so.1.0
-#               -DPYTHON_INCLUDE_DIR=$ENV{REZ_PYTHON_ROOT}/include
-#)
-
 install(CODE "message(STATUS Installing...)")
 
