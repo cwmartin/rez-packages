@@ -16,8 +16,8 @@ uuid = 'python'
 
 def commands():
     if building:
-        env.CPATH.append('{root}/include/python2.7')
-        env.PKG_CONFIG_PATH.append('{root}/lib/pkgconfig')
+        env.CPATH.prepend('{root}/include/python2.7')
+        env.PKG_CONFIG_PATH.prepend('{root}/lib/pkgconfig')
 
-    env.PATH.append('{root}/bin')
+    env.PATH.prepend('{root}/bin')
 
